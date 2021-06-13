@@ -1,0 +1,135 @@
+/*
+ * 画面のスタイルシート
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    min-width: 1076px;
+}
+
+.color-green {
+    color: #236A2E;
+}
+
+/*
+ * [header]のスタイルシート
+*/
+
+header {
+    display: inline-block;
+}
+
+.block-header {
+    margin: 5px 0;
+}
+
+.block-header a {
+    text-decoration: none;
+    letter-spacing: normal;
+}
+
+.block-header li {
+    display:inline-block;
+    font-size: 20px;
+    list-style: none;
+    padding: 0 15px;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: .3s;
+}
+
+.block-header li:hover {
+    opacity: 0.6;
+}
+
+/*
+ * [main]のスタイルシート
+*/
+
+.f-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: stretch;
+}
+
+.f-item {
+    margin-right: 30px;
+}
+
+.f-item2 {
+    width: 100%;
+    background-image: url(img/shinnryokuFTHG2900_TP_V4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.box-main {
+    width: 350px;
+    max-width: 350px;
+    margin: 60px 0 60px 30px;
+    padding-left: 60px;
+    font-size: 28px;
+    border-top: 1px solid #236A2E;
+    border-bottom: 1px solid #236A2E;
+}
+
+.main-discliption {
+    float: left;
+    margin-bottom: 40px;
+    margin-left: 30px;
+    padding-left: 70px;
+    line-height: 2;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        min-width: 100%;
+    }
+
+    header {
+        min-width: 100%;
+    }
+
+    .f-container {
+        min-width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .block-header li {
+        margin-right: 20px;
+        font-size: 18px;
+        padding: 0 15px;
+    }
+
+    .f-item {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .box-main {
+        width: auto;
+        margin: 30px 10px;
+        padding-left: 0;
+        font-size: 28px;
+        border-top: 1px solid #236A2E;
+        border-bottom: 1px solid #236A2E;
+    }
+
+    .main-discliption {
+        margin-left: 50px;
+        margin-bottom: 0;
+        padding-left: 50px;
+        line-height: 1.8;
+        font-size: 16px;
+    }
+    .f-item2 {
+        width: 100%;
+        min-height: 100vh;
+        background-image: url(img/shinnryokuFTHG2900_TP_V4.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}

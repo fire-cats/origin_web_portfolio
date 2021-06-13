@@ -1,0 +1,189 @@
+/*
+ * 画面のスタイルシート
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    min-width: 1076px;
+    background-image: url(img/PAK86_miagerebamidori1226.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(255,255,255,0.7);
+    background-blend-mode: lighten;
+}
+
+.color-green {
+    color: #236A2E;
+}
+
+/*
+ * [header]のスタイルシート
+*/
+
+.about-header {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+/*
+ *[main]のスタイルシート
+*/
+
+.about-main {
+    text-align: center;
+    margin: 80px 0;
+}
+
+.profile-img {
+    margin-bottom: 10px;
+}
+
+.box-main b {
+    font-size: 25px;
+    font-weight: normal;
+}
+
+.box-main p {
+    font-size: 18px;
+}
+
+.box-main span {
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+}
+
+.icon-list {
+    list-style: none;
+    width: 100%;
+    max-width: 247px;
+    margin: 30px auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-list li {
+    margin-right: 40px;
+}
+
+.icon-list li:last-child {
+    margin-right: 0;
+}
+
+/*
+ * [footer]のスタイルシート
+*/
+
+.block-footer {
+    margin: 5px 0;
+}
+
+.block-footer li {
+    display:inline-block;
+    font-size: 20px;
+    list-style: none;
+    padding: 0 10px;
+    font-weight: bold;
+    border-radius: 6px;
+    transition: .3s;
+}
+
+.block-footer a {
+    text-decoration: none;
+    letter-spacing: normal;
+}
+
+.block-footer li:hover {
+    opacity: 0.6;
+}
+
+/*
+ * スマホ用のスタイルシート
+*/
+
+@media screen and (max-width: 767px) {
+    body {
+        min-width: 100%;
+    }
+
+    .about-header {
+        min-width: 100%;
+    }
+
+    .about-main {
+        min-width: 100%;
+        margin: 40px 0;
+    }
+
+    .icon-list {
+        min-width: 100%;
+    }
+
+    .block-footer {
+        min-width: 100%;
+    }
+
+
+/*
+ * スマホ用[header]のスタイルシート
+*/
+
+.about-header {
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+/*
+ * スマホ用[main]のスタイルシート
+*/
+
+.about-main {
+    margin: 40px 0;
+}
+
+.profile-img {
+    margin-bottom: 5px;
+}
+
+.box-main b {
+    font-size: 20px;
+}
+
+.box-main p {
+    font-size: 14px;
+}
+
+.box-main span {
+    font-size: 12px;
+    line-height: 1;
+}
+
+.icon-list {
+    margin: 15px auto;
+}
+
+.icon-list li {
+    margin-right: 20px;
+}
+
+/*
+ * スマホ用[footer]のスタイルシート
+*/
+
+.block-footer {
+    margin: 5px 0;
+    text-align: center;
+}
+
+.block-footer li {
+    font-size: 15px;
+    padding: 0 7px;
+    
+}
+
+}
